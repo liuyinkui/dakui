@@ -1,10 +1,11 @@
 /* 全局样式 */
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --text-color: #333;
-    --light-gray: #f5f6fa;
-    --white: #ffffff;
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --text-color: #333333;
+    --background-color: #f5f5f5;
+    --accent-color: #0066ff;
+    --font-primary: 'Helvetica Neue', Arial, sans-serif;
 }
 
 * {
@@ -14,15 +15,16 @@
 }
 
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: var(--font-primary);
     line-height: 1.6;
     color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 /* 导航栏样式 */
@@ -31,16 +33,21 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--white);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: transparent;
     z-index: 1000;
+    padding: 30px 0;
+    transition: background 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: var(--secondary-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
 }
 
 .logo {
@@ -52,51 +59,180 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-}
-
-.nav-links li {
-    margin-left: 30px;
+    gap: 40px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--primary-color);
+    font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 /* 首页横幅样式 */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: var(--white);
     display: flex;
     align-items: center;
-    text-align: center;
+    background-color: var(--secondary-color);
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 72px;
+    font-weight: bold;
     margin-bottom: 20px;
+    line-height: 1.1;
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 24px;
+    color: var(--text-color);
+    max-width: 600px;
+}
+
+/* 作品展示样式 */
+.works {
+    padding: 120px 0;
+    background-color: var(--secondary-color);
+}
+
+.works h2 {
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.work-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.work-item:hover img {
+    transform: scale(1.05);
+}
+
+.work-item h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: var(--secondary-color);
+    font-size: 24px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* 客户评价样式 */
+.testimonials {
+    padding: 120px 0;
+    background-color: var(--background-color);
+}
+
+.testimonials h2 {
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.testimonials-slider {
+    position: relative;
+}
+
+.testimonial-item {
+    padding: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
     margin-bottom: 30px;
+}
+
+.testimonial-number {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.testimonial-text {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.testimonial-author h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* 使命部分样式 */
+.mission {
+    padding: 120px 0;
+    background-color: var(--secondary-color);
+}
+
+.mission h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.mission-content p {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* 服务部分样式 */
+.services {
+    padding: 120px 0;
+    background-color: var(--background-color);
+}
+
+.services h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.services-content p {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+/* 联系我们样式 */
+.contact {
+    padding: 120px 0;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 15px 30px;
-    background: var(--white);
-    color: var(--primary-color);
+    padding: 20px 40px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
     transition: transform 0.3s ease;
 }
 
@@ -104,151 +240,69 @@ body {
     transform: translateY(-3px);
 }
 
-/* 关于我部分样式 */
-.about {
-    padding: 100px 0;
-    background: var(--light-gray);
-}
-
-.about h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 36px;
-}
-
-.about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* 作品展示样式 */
-.projects {
-    padding: 100px 0;
-}
-
-.projects h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 36px;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-/* 技能展示样式 */
-.skills {
-    padding: 100px 0;
-    background: var(--light-gray);
-}
-
-.skills h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 36px;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.skill-item {
-    text-align: center;
-    padding: 30px;
-    background: var(--white);
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.skill-item:hover {
-    transform: translateY(-5px);
-}
-
-.skill-item i {
-    font-size: 40px;
-    color: var(--secondary-color);
-    margin-bottom: 20px;
-}
-
-/* 联系方式样式 */
-.contact {
-    padding: 100px 0;
-}
-
-.contact h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 36px;
-}
-
-.contact-content {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-}
-
 .contact-info {
-    margin-bottom: 30px;
+    margin-top: 60px;
 }
 
-.contact-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.contact-item i {
-    font-size: 24px;
-    color: var(--secondary-color);
-    margin-right: 15px;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social-link {
-    color: var(--primary-color);
-    font-size: 24px;
-    transition: color 0.3s ease;
-}
-
-.social-link:hover {
-    color: var(--secondary-color);
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 /* 页脚样式 */
 footer {
-    background: var(--primary-color);
-    color: var(--white);
-    padding: 20px 0;
-    text-align: center;
+    padding: 60px 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
     .nav-links {
         display: none;
     }
-    
+
     .hero h1 {
-        font-size: 36px;
+        font-size: 48px;
     }
-    
+
     .hero p {
-        font-size: 18px;
+        font-size: 20px;
     }
-    
-    .about, .projects, .skills, .contact {
-        padding: 60px 0;
+
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-content p,
+    .services-content p {
+        font-size: 24px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>设计师作品集</title>
+    <title>DAKUI - 创意设计工作室</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -13,10 +13,12 @@
         <div class="container">
             <div class="logo">DAKUI</div>
             <ul class="nav-links">
-                <li><a href="#home">首页</a></li>
-                <li><a href="#about">关于</a></li>
-                <li><a href="#projects">作品</a></li>
-                <li><a href="#skills">技能</a></li>
+                <li><a href="#works">作品</a></li>
+                <li><a href="#testimonials">评价</a></li>
+                <li><a href="#pricing">价格</a></li>
+                <li><a href="#mission">使命</a></li>
+                <li><a href="#services">服务</a></li>
+                <li><a href="#archive">归档</a></li>
                 <li><a href="#contact">联系</a></li>
             </ul>
         </div>
@@ -25,85 +27,99 @@
     <!-- 首页横幅 -->
     <section id="home" class="hero">
         <div class="container">
-            <h1>创意设计 · 无限可能</h1>
-            <p>专注于用户体验与视觉设计</p>
-            <a href="#projects" class="cta-button">查看作品</a>
+            <h1>Design DAKUI</h1>
+            <p>为AI公司打造的创意设计工作室</p>
         </div>
     </section>
 
-    <!-- 关于我 -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>关于我</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>我是一名充满热情的设计师，专注于创造美观且实用的设计作品。通过多年的设计经验，我致力于将创意转化为优秀的用户体验。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 作品展示 -->
-    <section id="projects" class="projects">
+    <!-- 精选作品 -->
+    <section id="works" class="works">
         <div class="container">
             <h2>精选作品</h2>
-            <div class="project-grid">
-                <!-- 项目卡片将通过JavaScript动态加载 -->
+            <div class="works-grid">
+                <div class="work-item">
+                    <img src="images/work1.jpg" alt="项目1">
+                    <h3>Ozone</h3>
+                </div>
+                <div class="work-item">
+                    <img src="images/work2.jpg" alt="项目2">
+                    <h3>Instant</h3>
+                </div>
+                <div class="work-item">
+                    <img src="images/work3.jpg" alt="项目3">
+                    <h3>IO.NET</h3>
+                </div>
+                <!-- 更多作品项目 -->
             </div>
         </div>
     </section>
 
-    <!-- 技能展示 -->
-    <section id="skills" class="skills">
+    <!-- 客户评价 -->
+    <section id="testimonials" class="testimonials">
         <div class="container">
-            <h2>专业技能</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <i class="fas fa-pencil-ruler"></i>
-                    <h3>UI设计</h3>
-                    <p>用户界面设计</p>
+            <h2>客户评价</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-number">01</div>
+                    <p class="testimonial-text">"DAKUI团队展现了卓越的创造力，为我们的AI产品打造了独特的视觉体验。"</p>
+                    <div class="testimonial-author">
+                        <h4>张三</h4>
+                        <p>某科技公司 CEO</p>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>视觉设计</h3>
-                    <p>品牌视觉设计</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>响应式设计</h3>
-                    <p>多平台适配</p>
-                </div>
+                <!-- 更多评价 -->
             </div>
         </div>
     </section>
 
-    <!-- 联系方式 -->
+    <!-- 使命 -->
+    <section id="mission" class="mission">
+        <div class="container">
+            <h2>使命</h2>
+            <div class="mission-content">
+                <p>打造最好的设计版本</p>
+                <p>只做我们引以为豪的作品</p>
+                <p>不走捷径，不制造无灵魂的垃圾</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务 -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>服务</h2>
+            <div class="services-content">
+                <p>您的AI故事，可视化呈现。我们塑造独特而难忘的品牌。我们设计简化复杂性的界面。</p>
+                <p>创意聚焦，每一次交互都经过精心设计，</p>
+                <p>不仅是视觉的享受，更是情感的共鸣。</p>
+                <p>不追求美，而是设计美。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>联系我</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>email@example.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+86 123 4567 8900</p>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                </div>
+            <h2>开始合作</h2>
+            <a href="#contact-form" class="cta-button">预约咨询</a>
+            <div class="contact-info">
+                <p>DAKUI · 为AI公司打造的创意设计工作室</p>
+                <p>hello@dakui.design</p>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 DAKUI. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#works">作品</a>
+                <a href="#services">服务</a>
+                <a href="#pricing">价格</a>
+                <a href="#testimonials">评价</a>
+                <a href="#mission">使命</a>
+                <a href="#archive">归档</a>
+                <a href="#blog">博客</a>
+            </div>
         </div>
     </footer>
 
