@@ -274,35 +274,64 @@ footer {
 }
 
 /* 响应式设计 */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .container {
         padding: 0 20px;
     }
-
-    .nav-links {
-        display: none;
-    }
-
     .hero h1 {
-        font-size: 48px;
+        font-size: 60px;
     }
-
     .hero p {
         font-size: 20px;
     }
+    .works-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
 
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 48px;
+    }
+    .hero p {
+        font-size: 18px;
+    }
     .works-grid {
         grid-template-columns: 1fr;
     }
-
     .mission-content p,
     .services-content p {
         font-size: 24px;
     }
-
     .footer-links {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .works h2,
+    .testimonials h2,
+    .mission h2,
+    .services h2,
+    .contact h2 {
+        font-size: 36px;
+    }
+    .testimonial-text {
+        font-size: 18px;
+    }
+    .cta-button {
+        padding: 15px 30px;
+        font-size: 16px;
     }
 }
