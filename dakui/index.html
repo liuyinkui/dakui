@@ -11,16 +11,58 @@
         <div class="nav-content">
             <a href="index.html" class="logo">DK Creative</a>
             <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
                 <a href="work.html">Work</a>
                 <a href="about.html">About</a>
                 <a href="#contact">Contact</a>
             </div>
+            <button class="nav-toggle" aria-label="Open menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <div class="mobile-nav-overlay"></div>
+        <div class="mobile-nav-menu">
+            <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
+            <a href="index.html" class="active">Home</a>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
     <section id="home" class="hero">
+        <video class="hero-video active" data-index="0" autoplay muted loop playsinline>
+            <source src="video/background1.mp4" type="video/mp4">
+            <source src="video/background1.webm" type="video/webm">
+        </video>
+        <video class="hero-video" data-index="1" muted loop playsinline>
+            <source src="video/background2.mp4" type="video/mp4">
+            <source src="video/background2.webm" type="video/webm">
+        </video>
+        <video class="hero-video" data-index="2" muted loop playsinline>
+            <source src="video/background3.mp4" type="video/mp4">
+            <source src="video/background3.webm" type="video/webm">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="video-controls">
+            <button class="video-btn prev-btn" aria-label="Previous video">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="video-indicator">
+                <span class="current-video">1</span>/<span class="total-videos">3</span>
+            </div>
+            <button class="video-btn next-btn" aria-label="Next video">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
         <div class="container">
-            <h1>Discover the essence of Pearl, a free Framer template. Let's shape your brand into a masterpiece together.</h1>
+            <h1>I help businesses improve their design experience.</h1>
             <a href="#" class="cta-button">Get for free</a>
         </div>
     </section>
@@ -31,29 +73,31 @@
             <p>See how we've turned ideas into reality. Dive into the stories of successful product designs that make a difference.</p>
             <div class="works-grid">
                 <div class="work-item">
-                    <img src="img/Group 177.png" alt="Main Project Image">
-                    <h3>Booking Corp.</h3>
-                    <p>Fintech Dello Banking App</p>
+                    <a href="detail.html">
+                        <img src="img/work1.png" alt="Main Project Image">
+                        <p>Fintech Dello Banking App</p>
+                        <h3>Booking Corp.</h3>
+                    </a>
                 </div>
                 <div class="work-item">
-                    <img src="img/Group 177.png" alt="Main Project Image">
-                    <h3>Dazzle Inc.</h3>
+                    <img src="img/work2.png" alt="Main Project Image">
                     <p>Dazzle © Branding</p>
+                    <h3>Dazzle Inc.</h3>
                 </div>
                 <div class="work-item">
-                    <img src="img/Group 237.png" alt="Main Project Image">
-                    <h3>Your Client Name</h3>
+                    <img src="img/work3.png" alt="Main Project Image">
                     <p>Healthcare Mobile App</p>
+                    <h3>Your Client Name</h3>
                 </div>
                 <div class="work-item">
-                    <img src="img/Group 237.png" alt="Main Project Image">
-                    <h3>Tech Bank Client</h3>
+                    <img src="img/work4.png" alt="Main Project Image">
                     <p>Technical Infographic</p>
+                    <h3>Tech Bank Client</h3>
                 </div>
                 <div class="work-item">
-                    <img src="img/Group 237.png" alt="Main Project Image">
-                    <h3>Client Name</h3>
+                    <img src="img/work5.png" alt="Main Project Image">
                     <p>Extend & Support - App Plugin</p>
+                    <h3>Client Name</h3>
                 </div>
             </div>
         </div>
@@ -74,20 +118,30 @@
     </section>
 
     <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#work">Work</a>
-                <a href="about.html">About</a>
-                <a href="#contact">Contact</a>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h1>Let's start creating together</h1>
             </div>
-            <div class="social-links">
-                <a href="#">Twitter</a>
-                <a href="#">Dribbble</a>
-                <a href="#">Instagram</a>
+            <div class="footer-column">
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
             </div>
-            <p>2023 Pearl Framer template crafted with love by Dawid Pietrasiak</p>
+            <div class="footer-column">
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">Dribbble</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>ⓒ 2025 DK Creative</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html> 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - DK Creative</title>
+    <title>About - DK Creative</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,89 +11,138 @@
         <div class="nav-content">
             <a href="index.html" class="logo">DK Creative</a>
             <div class="nav-links">
+                <a href="index.html">Home</a>
                 <a href="work.html">Work</a>
-                <a href="about.html">About</a>
+                <a href="about.html" class="active">About</a>
                 <a href="#contact">Contact</a>
             </div>
+            <button class="nav-toggle" aria-label="Open menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <div class="mobile-nav-overlay"></div>
+        <div class="mobile-nav-menu">
+            <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
+            <a href="index.html">Home</a>
+            <a href="work.html">Work</a>
+            <a href="about.html" class="active">About</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
     <section class="about-hero">
         <div class="container">
-            <h1>Create Your Dream Website With The Free Framer Template</h1>
-            <h2>We redefine possibility by combining imagination with precision to shape extraordinary experiences.</h2>
-            <img src="img/work1.png" alt="About Top Image" class="about-top-img">
-            <img src="img/work2.png" alt="About Top Image 2" class="about-top-img">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1>Creative Designer & Developer</h1>
+                    <p class="intro">Hi, I'm Liu Yinkui, a passionate designer and developer based in China. With over 5 years of experience in digital design and web development, I specialize in creating beautiful, functional, and user-centered digital experiences.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img/profile.jpg" alt="Liu Yinkui - Designer & Developer">
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="about-mission">
+    <section class="skills">
         <div class="container">
-            <h2>Our Mission</h2>
-            <p>We believe in the power of design to inspire and make a meaningful impact.<br>
-            We aim to transform ideas into captivating designs.<br>
-            We strive to bring creativity and functionality together, crafting solutions that resonate with your audience.</p>
-            <img src="img/work3.png" alt="About Middle Image" class="about-middle-img">
+            <h2>Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and engaging user interfaces with a focus on user experience and accessibility.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Web Development</h3>
+                    <p>Building responsive and modern websites using the latest technologies and best practices.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Brand Identity</h3>
+                    <p>Developing cohesive brand identities that communicate your unique story and values.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Digital Strategy</h3>
+                    <p>Crafting digital strategies that help businesses achieve their goals and connect with their audience.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="about-services">
+    <section class="experience">
         <div class="container">
-            <h2>Services</h2>
-            <p>Services are designed with simplicity and effectiveness in mind. We offer a comprehensive range of solutions tailored to meet your design needs.</p>
-            <ul>
-                <li><strong>Branding:</strong> Logo Design / Brand Guidelines / Collateral Design / Rebranding Services</li>
-                <li><strong>UX & UI Design:</strong> User Research and Analysis / Wireframing and Prototyping / User Interface Design / User Experience Testing / Responsive Design Solutions</li>
-                <li><strong>Motion & Animation:</strong> Motion Graphics Design / Animated Explainer Videos / Interactive Presentations</li>
-                <li><strong>Mobile:</strong> iOS App Development / Android App Development / App Prototyping and Testing / App Maintenance and Updates</li>
-            </ul>
-            <img src="img/work4.png" alt="About Bottom Image" class="about-bottom-img">
+            <h2>Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="year">2023 - Present</div>
+                    <h3>Senior Designer</h3>
+                    <p>DK Creative Studio</p>
+                    <ul>
+                        <li>Leading design projects for major clients</li>
+                        <li>Developing brand strategies and visual identities</li>
+                        <li>Mentoring junior designers</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <div class="year">2020 - 2023</div>
+                    <h3>UI/UX Designer</h3>
+                    <p>Digital Agency</p>
+                    <ul>
+                        <li>Created user-centered digital experiences</li>
+                        <li>Collaborated with development teams</li>
+                        <li>Improved conversion rates for clients</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <div class="year">2018 - 2020</div>
+                    <h3>Web Designer</h3>
+                    <p>Freelance</p>
+                    <ul>
+                        <li>Designed and developed custom websites</li>
+                        <li>Managed client relationships</li>
+                        <li>Delivered projects on time and within budget</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="about-process">
+    <section class="contact" id="contact">
         <div class="container">
-            <h2>How We Work</h2>
-            <div class="process-steps">
-                <div class="step">
-                    <h3>01</h3>
-                    <h4>Discover Needs</h4>
-                    <p>We delve deep into understanding your brand, target audience, and objectives, unraveling the insights that will shape our creative journey.</p>
-                </div>
-                <div class="step">
-                    <h3>02</h3>
-                    <h4>Design Experience</h4>
-                    <p>Armed with insights, our design experts bring concepts to life, seamlessly blending aesthetics and functionality for a visually stunning and user-centric experience.</p>
-                </div>
-                <div class="step">
-                    <h3>03</h3>
-                    <h4>Refine Feedback</h4>
-                    <p>We iterate tirelessly, refining our designs based on feedback, ensuring every pixel and interaction aligns perfectly with your brand identity and user expectations.</p>
-                </div>
-                <div class="step">
-                    <h3>04</h3>
-                    <h4>Deliver Project</h4>
-                    <p>The culmination of our collaborative efforts results in the delivery of a polished, cohesive digital experience that not only meets but exceeds your expectations.</p>
-                </div>
+            <h2>Let's Create Something Amazing Together</h2>
+            <p>I'm always open to discussing new projects and creative ideas.</p>
+            <div class="contact-info">
+                <a href="mailto:contact@dkcreative.com" class="cta-button">Get in Touch</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="work.html">Work</a>
-                <a href="about.html">About</a>
-                <a href="#contact">Contact</a>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h1>Let's start creating together</h1>
             </div>
-            <div class="social-links">
-                <a href="#">Twitter</a>
-                <a href="#">Dribbble</a>
-                <a href="#">Instagram</a>
+            <div class="footer-column">
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
             </div>
-            <p>2023 DK Creative template crafted with love</p>
+            <div class="footer-column">
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">Dribbble</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>ⓒ 2025 DK Creative</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html> 
