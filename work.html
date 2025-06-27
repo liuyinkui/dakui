@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pearl - Creative Design Studio</title>
+    <title>Work - DK Creative</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,8 +11,8 @@
         <div class="nav-content">
             <a href="index.html" class="logo">DK Creative</a>
             <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="work.html">Work</a>
+                <a href="index.html">Home</a>
+                <a href="work.html" class="active">Work</a>
                 <a href="about.html">About</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -25,59 +25,27 @@
         <div class="mobile-nav-overlay"></div>
         <div class="mobile-nav-menu">
             <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
-            <a href="index.html" class="active">Home</a>
-            <a href="work.html">Work</a>
+            <a href="index.html">Home</a>
+            <a href="work.html" class="active">Work</a>
             <a href="about.html">About</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <section id="home" class="hero">
-        <video class="hero-video active" data-index="0" autoplay muted loop playsinline>
-            <source src="video/background1.mp4" type="video/mp4">
-            <source src="video/background1.webm" type="video/webm">
-        </video>
-        <video class="hero-video" data-index="1" muted loop playsinline>
-            <source src="video/background2.mp4" type="video/mp4">
-            <source src="video/background2.webm" type="video/webm">
-        </video>
-        <video class="hero-video" data-index="2" muted loop playsinline>
-            <source src="video/background3.mp4" type="video/mp4">
-            <source src="video/background3.webm" type="video/webm">
-        </video>
-        <div class="hero-overlay"></div>
-        <div class="video-controls">
-            <button class="video-btn prev-btn" aria-label="Previous video">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-            <div class="video-indicator">
-                <span class="current-video">1</span>/<span class="total-videos">3</span>
-            </div>
-            <button class="video-btn next-btn" aria-label="Next video">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-        </div>
+    <section class="work-hero">
         <div class="container">
-            <h1>I help businesses improve their design experience.</h1>
-            <a href="#" class="cta-button">Get for free</a>
+            <h1 class="work-title">Designing Success</h1>
+            <p class="work-subtitle">See how we've turned ideas into reality. Dive into the stories of successful product designs that make a difference.</p>
         </div>
     </section>
 
-    <section id="work" class="works">
+    <section class="works-list">
         <div class="container">
-            <h2>Designing Success</h2>
-            <p>See how we've turned ideas into reality. Dive into the stories of successful product designs that make a difference.</p>
             <div class="works-grid">
                 <div class="work-item">
-                    <a href="detail.html">
-                        <img src="img/work1.png" alt="Main Project Image">
-                        <p>Fintech Dello Banking App</p>
-                        <h3>Booking Corp.</h3>
-                    </a>
+                    <img src="img/work1.png" alt="Main Project Image">
+                    <p>Fintech Dello Banking App</p>
+                    <h3>Booking Corp.</h3>
                 </div>
                 <div class="work-item">
                     <img src="img/work2.png" alt="Main Project Image">
@@ -99,21 +67,12 @@
                     <p>Extend & Support - App Plugin</p>
                     <h3>Client Name</h3>
                 </div>
+                <div class="work-item">
+                    <img src="img/work6.png" alt="Main Project Image">
+                    <p>E-commerce Platform Design</p>
+                    <h3>Shopify Client</h3>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2>Our Story</h2>
-            <p>Explore our journey and learn what sets us apart in crafting impactful digital experiences.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Let's start creating together</h2>
-            <a href="#" class="cta-button">Let's talk</a>
         </div>
     </section>
 
