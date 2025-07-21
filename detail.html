@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthcare Mobile App - Pearl</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.2s ease 0.2s forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: none; }
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -14,7 +24,7 @@
                 <a href="index.html">Home</a>
                 <a href="work.html">Work</a>
                 <a href="about.html">About</a>
-                <a href="#contact">Contact</a>
+                <a href="contact.html">Contact</a>
             </div>
             <button class="nav-toggle" aria-label="Open menu">
                 <span class="bar"></span>
@@ -28,11 +38,10 @@
             <a href="index.html">Home</a>
             <a href="work.html">Work</a>
             <a href="about.html">About</a>
-            <a href="#contact">Contact</a>
+            <a href="contact.html">Contact</a>
         </div>
     </nav>
-
-    <section id="work" class="work-detail">
+    <section id="work" class="work-detail fade-in">
         <div class="container">
             <div class="detail-hero">
                 <h1>Healthcare Mobile App. The New Era of Seamless Digital Experience</h1>
@@ -57,7 +66,6 @@
             </div>
         </div>
     </section>
-
     <footer>
         <div class="footer-content">
             <div class="footer-column">
@@ -68,7 +76,7 @@
                     <a href="index.html">Home</a>
                     <a href="work.html">Work</a>
                     <a href="about.html">About</a>
-                    <a href="#contact">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </div>
             </div>
             <div class="footer-column">

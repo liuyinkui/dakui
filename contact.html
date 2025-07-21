@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - DK Creative</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-hero {
+            background: #f7f7f7;
+            padding: 80px 0 40px 0;
+            text-align: center;
+        }
+        .contact-hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #222;
+        }
+        .contact-hero p {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 0;
+        }
+        .contact-main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            background: #fff;
+            padding: 40px 0 80px 0;
+        }
+        .contact-form {
+            flex: 1 1 340px;
+            max-width: 420px;
+            background: #fafafa;
+            border-radius: 16px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+            padding: 32px 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .contact-form label {
+            font-size: 15px;
+            color: #222;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 15px;
+            background: #fff;
+            resize: none;
+        }
+        .contact-form textarea {
+            min-height: 100px;
+        }
+        .contact-form button {
+            background: #222;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 0;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .contact-form button:hover {
+            background: #444;
+        }
+        .contact-info {
+            flex: 1 1 260px;
+            max-width: 340px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            justify-content: flex-start;
+        }
+        .contact-info h2 {
+            font-size: 22px;
+            color: #222;
+            margin-bottom: 10px;
+        }
+        .contact-info p, .contact-info a {
+            font-size: 16px;
+            color: #666;
+            margin: 0 0 8px 0;
+            text-decoration: none;
+        }
+        .contact-map {
+            flex: 1 1 320px;
+            min-width: 320px;
+            max-width: 480px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+            background: #eaeaea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 320px;
+        }
+        .contact-map span {
+            color: #aaa;
+            font-size: 18px;
+        }
+        @media (max-width: 900px) {
+            .contact-main {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-map {
+                width: 100%;
+                min-width: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="logo">DK Creative</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="work.html">Work</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+            <button class="nav-toggle" aria-label="Open menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <div class="mobile-nav-overlay"></div>
+        <div class="mobile-nav-menu">
+            <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
+            <a href="index.html">Home</a>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+    <section class="contact-hero">
+        <h1>Contact</h1>
+        <p>Let's talk about your project or just say hello.<br>We're here to help you create something amazing.</p>
+    </section>
+    <section class="contact-main">
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:hello@dkcreative.com">hello@dkcreative.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p>Address: 123 Creative Street, Design City</p>
+            <p>Follow us:</p>
+            <p>
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Dribbble</a>
+            </p>
+        </div>
+        <div class="contact-map">
+            <span>Map Placeholder</span>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h1>Let's start creating together</h1>
+            </div>
+            <div class="footer-column">
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">Dribbble</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>ⓒ 2025 DK Creative</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html> 
