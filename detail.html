@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthcare Mobile App - Pearl</title>
+    <link rel="icon" type="image/png" href="logo/DKLogo_fav.png">
     <link rel="stylesheet" href="css/style.css">
     <style>
         .fade-in {
@@ -14,12 +15,83 @@
             from { opacity: 0; transform: translateY(40px); }
             to { opacity: 1; transform: none; }
         }
+        
+        /* 修改图片间距为8px */
+        .work-gallery {
+            gap: 8px !important;
+            display: grid !important;
+            grid-template-columns: 1fr !important;
+        }
+        
+        /* 16:9比例的图片 - 单独显示一行 */
+        .work-gallery .wide-image {
+            grid-column: 1 / -1 !important;
+            width: 100% !important;
+            aspect-ratio: 16/9 !important;
+            object-fit: cover !important;
+        }
+        
+        /* 正方形图片 - 显示一行两列 */
+        .work-gallery .square-image {
+            aspect-ratio: 1/1 !important;
+            object-fit: cover !important;
+        }
+        
+        /* 调整页面左右边距为16px */
+        .container {
+            padding-left: 16px !important;
+            padding-right: 16px !important;
+        }
+        
+        /* Logo图片样式 */
+        .logo {
+            display: inline-block !important;
+            text-decoration: none !important;
+            position: relative !important;
+        }
+        
+        .logo img {
+            height: 14px !important;
+            width: auto !important;
+            transition: opacity 0.3s ease !important;
+        }
+        
+
+        
+        /* 视频样式 */
+        .work-gallery video {
+            width: 100% !important;
+            height: auto !important;
+            border-radius: 5px !important;
+            grid-column: 1 / -1 !important;
+        }
+        
+        /* 桌面端：正方形图片两列显示 */
+        @media (min-width: 768px) {
+            .work-gallery {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+            
+            .work-gallery .wide-image {
+                grid-column: 1 / -1 !important;
+            }
+            
+            .work-gallery .square-image {
+                grid-column: auto !important;
+            }
+            
+            .work-gallery video {
+                grid-column: 1 / -1 !important;
+            }
+        }
     </style>
 </head>
 <body>
     <nav>
         <div class="nav-content">
-            <a href="index.html" class="logo">DK Creative</a>
+            <a href="index.html" class="logo">
+                <img src="logo/logo_dkcreative_black.png" alt="DK Creative">
+            </a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="work.html">Work</a>
@@ -51,13 +123,19 @@
                 <p><strong>Client:</strong> Your Client Name</p>
             </div>
             <div class="work-gallery">
-                <img src="img/work1.png" alt="Main Project Image">
-                <img src="img/work2.png" alt="Large Project Gallery Image #1">
-                <img src="img/work3.png" alt="Large Project Gallery Image #2">
-                <img src="img/work4.png" alt="Project Gallery Image for 50% width of the screen #1">
-                <img src="img/work5.png" alt="Project Gallery Image for 50% width of the screen #2">
-                <img src="img/work6.png" alt="Large Project Gallery Image #3">
-                <img src="img/work7.png" alt="Large Project Gallery Image #4">
+                <img src="img/work1.png" alt="Main Project Image" class="wide-image">
+                <video controls>
+                    <source src="motion/m1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="img/work3.png" alt="Main Project Image" class="square-image">
+                <img src="img/work8.png" alt="Large Project Gallery Image #1" class="square-image">
+                <img src="img/work2.png" alt="Large Project Gallery Image #2" class="wide-image">
+                <img src="img/work4.png" alt="Project Gallery Image for 50% width of the screen #1" class="square-image">
+                <img src="img/work5.png" alt="Project Gallery Image for 50% width of the screen #2" class="square-image">
+                <img src="img/work6.png" alt="Large Project Gallery Image #3" class="wide-image">
+                <img src="img/work7.png" alt="Large Project Gallery Image #4" class="square-image">
+                <img src="img/work8.png" alt="Large Project Gallery Image #1" class="square-image">
             </div>
             <div class="work-description">
                 <h2>Revolutionizing Banking: Enhancing User Experience with the Dello Fintech Banking</h2>

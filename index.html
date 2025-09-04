@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pearl - Creative Design Studio</title>
+    <link rel="icon" type="image/png" href="logo/DKLogo_fav.png">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 将hero区域的h1文字在页面中完全居中 */
+        .hero .container {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            min-height: 100vh !important;
+            text-align: center !important;
+        }
+        
+        .hero h1 {
+            text-align: center !important;
+            margin: 0 auto !important;
+        }
+        
+        .hero .cta-button {
+            margin-top: 20px !important;
+        }
+        
+        /* Logo图片样式 */
+        .logo {
+            display: inline-block !important;
+            text-decoration: none !important;
+        }
+        
+        .logo img {
+            height: 14px !important;
+            width: auto !important;
+        }
+    </style>
 </head>
 <body>
     <nav>
         <div class="nav-content">
-            <a href="index.html" class="logo">DK Creative</a>
+            <a href="index.html" class="logo">
+                <img src="logo/logo_dkcreative_white.svg" alt="DK Creative">
+            </a>
             <div class="nav-links">
                 <a href="index.html" class="active">Home</a>
                 <a href="work.html">Work</a>
